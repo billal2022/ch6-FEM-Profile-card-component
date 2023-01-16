@@ -1,0 +1,120 @@
+:root{
+    --background-400:hsl(185, 75%, 39%);
+    --title-500:hsl(227, 10%, 46%);
+    --title-200:hsl(229, 23%, 23%);
+    --bottom-color-childs-600:hsl(0, 0%, 59%);
+    --font-family-1: 'Big Shoulders Display', cursive;
+--font-family-2: 'Inter', sans-serif;
+--font-family-title: 'Kumbh Sans', sans-serif;
+--font-family-title-childs: 'Lexend Deca', sans-serif;
+    
+}
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-size: 18px;
+    
+}
+body{
+ overflow: hidden;   
+ background-color: var(--background-400);
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}        
+/*top left BG image*/
+.top-left-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-38%,-56%);
+}         
+/*bot right BG image*/                                                                         
+.bottom-right-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(60%,31%);
+}
+/* mian box*/
+.main-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 373px;
+  height: 383px;
+    background-color:white;
+    position: absolute;
+    z-index: 1;
+    border-radius: 13px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow:0px 20px 20px 20px rgba(0, 0, 0, 0.089);
+}
+/*card image*/
+.card-image {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+/*main-content*/
+.main-content{
+position: absolute;
+display: grid;
+justify-items: center;
+width: 100%;
+height: 100%;
+padding: 100px 0px 6px 1px;
+}
+/*nigger*/
+.nigger-picture{
+   
+    border: 5px solid white;
+    border-radius: 60px;
+}
+/*title*/
+.title{
+font-family: var(--font-family-title);
+color: var(--title-200);
+margin-bottom: -17px;
+}
+/* title number and name childs */
+.childs-1{
+    color: var(--bottom-color-childs-600);
+    font-family: var(--font-family-title-childs);
+    margin-left: 10px;
+}
+.childs-2{
+    color: var(--bottom-color-childs-600);
+    font-family: var(--font-family-title-childs);
+    font-size: 14px;
+}
+/* the fking line*/
+.line{
+    width: 100%;
+    height: 0.004rem;
+    background-color: var(--bottom-color-childs-600);
+    opacity: 0.3;
+}
+/* footer*/
+.bottom-content{
+    display: grid;
+    grid: auto/ 1fr 1fr 1fr;
+    gap: 50px;
+}
+.first-bottom-tag{
+font-family: var(--font-family-2);
+font-weight: 700;
+margin-bottom: 4px;
+}
+.second-botoom-tag{
+    font-family: var(--font-family-title-childs);
+    color: var(--title-500);
+   font-size: 13px;
+   opacity: 0.7;
+   letter-spacing: 3;
+}
